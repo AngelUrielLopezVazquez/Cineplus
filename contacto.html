@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CinePlus | Contacto</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <header id="nav"></header>
+  <main class="container py-4">
+    <h1 class="marquee h2 mb-3">Atención al cliente</h1>
+    <div id="aviso"></div>
+    <form id="formContacto" class="resumen" style="max-width:600px" novalidate>
+      <div class="mb-3"><label for="nombre" class="form-label">Nombre</label><input id="nombre" class="form-control" required><div class="invalid-feedback">Escribe tu nombre.</div></div>
+      <div class="mb-3"><label for="email" class="form-label">Email</label><input id="email" type="email" class="form-control" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" required><div class="invalid-feedback">Escribe un correo válido.</div></div>
+      <div class="mb-3"><label for="mensaje" class="form-label">Mensaje</label><textarea id="mensaje" rows="4" class="form-control" required></textarea><div class="invalid-feedback">Escribe tu mensaje.</div></div>
+      <button class="btn btn-warning"><i class="bi bi-send"></i> Enviar</button>
+    </form>
+  </main>
+  <footer class="text-center py-4 text-secondary">CinePlus · Compra simulada, no se realiza ningún cobro.</footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/utilidades.js"></script>
+
+</body>
+</html>

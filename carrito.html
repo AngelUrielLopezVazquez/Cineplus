@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CinePlus | Carrito</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <header id="nav"></header>
+  <main class="container py-4">
+    <h1 class="marquee h2 mb-3">Carrito de boletos</h1>
+    <div id="aviso"></div>
+    <div class="row g-4">
+      <div class="col-lg-8"><div id="lista" class="table-responsive"></div></div>
+      <div class="col-lg-4">
+        <div class="resumen">
+          <label for="cupon" class="form-label">Cupón de descuento (opcional)</label>
+          <div class="input-group mb-3">
+            <input id="cupon" class="form-control" placeholder="Ej. DESCUENTO10">
+            <button id="btnCupon" class="btn btn-outline-light" type="button">Aplicar</button>
+          </div>
+          <p id="totales"></p>
+          <button id="btnConfirmar" class="btn btn-warning w-100"><i class="bi bi-check2-circle"></i> Confirmar compra</button>
+        </div>
+      </div>
+    </div>
+    <h2 class="marquee h4 mt-5">Historial de compras</h2>
+    <div id="historial" class="table-responsive"></div>
+  </main>
+  <footer class="text-center py-4 text-secondary">CinePlus · Compra simulada, no se realiza ningún cobro.</footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/utilidades.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+CINEPLUS - Cartelera, funciones, asientos y compra simulada de boletos
+Caso Práctico 3 · Desarrollo de Aplicaciones Web · BUAP, Facultad de Ciencias de la Computación
+
+TECNOLOGÍAS
+HTML5, CSS3, Bootstrap 5 (incluido en la carpeta vendor) y JavaScript.
+
+CÓMO ABRIR EL PROYECTO
+La aplicación guarda sus datos en localStorage y los comparte entre páginas
+(película elegida, asientos, carrito, compras y asientos ocupados).
+Por eso conviene abrirla desde un servidor local y no con doble clic en
+index.html: algunos navegadores, como Firefox, no comparten localStorage entre
+archivos abiertos directamente, y las páginas posteriores a index.html no
+muestran la información.
+
+Opción 1: Visual Studio Code con Live Server (recomendada)
+  1. Abre la carpeta del proyecto en Visual Studio Code.
+  2. Instala la extensión "Live Server".
+  3. Haz clic derecho en index.html y elige "Open with Live Server".
+
+Opción 2: Python
+  1. Abre una terminal dentro de la carpeta del proyecto.
+  2. Ejecuta: python -m http.server 8000
+  3. Abre en el navegador: http://localhost:8000
+
+Opción 3: Chrome o Edge
+  Normalmente funcionan al abrir index.html directamente, sin servidor.
+
+ESTRUCTURA
+  index.html, funciones.html, carrito.html, contacto.html
+  css/estilos.css
+  js/cartelera.js, asientos.js, carrito.js, utilidades.js
+  img/ (8 pósters)
+  vendor/ (Bootstrap 5 y Bootstrap Icons)
+
+CUPONES DE PRUEBA
+  DESCUENTO10 (10 %) y BUAP15 (15 %)
+
+NOTAS
+  - La compra es simulada: no se realiza ningún cobro.
+  - Al confirmar una compra se descarga el comprobante boletos.txt.
+  - Para reiniciar los datos, borra el almacenamiento del sitio desde las
+    herramientas de desarrollo del navegador (pestaña Aplicación o Almacenamiento).
